@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>首页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<!--标准mui.css-->
+	<link rel="stylesheet" href="../css/mui.min.css">
+	<!--App自定义的css-->
+	<link rel="stylesheet" type="text/css" href="../css/app.css"/>
+</head>
+
+<body class="home">
+
+	<div id="app">
+	<!-- 标头 -->
+	<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title">{{msg}}</h1>
+	</header>
+
+	<div class="mui-content search">
+		<span class="mui-icon mui-icon-search search-icon"></span>
+		<input type="text" placeholder="搜索商品" id="search-inp"> 
+		<span class="mui-icon mui-icon-contact"></span>
+	</div>
+	<!-- 轮播 -->
+	<div id="slider" class="mui-slider" >
+		<div class="mui-slider-group mui-slider-loop" >
+			<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+			<div class="mui-slider-item mui-slider-item-duplicate">
+				<a href="#">
+					<img src="../images/banner_01.jpg">
+				</a>
+			</div>
+			<!-- 第一张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="../images/banner_01.jpg">
+					
+				</a>
+			</div>
+			<!-- 第二张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="../images/banner_01.jpg">
+				</a>
+			</div>
+			<!-- 第三张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="../images/banner_01.jpg">
+				</a>
+			</div>
+			<!-- 第四张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="./images/banner_01.jpg">
+				</a>
+			</div>
+			<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+			<div class="mui-slider-item mui-slider-item-duplicate">
+				<a href="#">
+					<img src="../images/banner_01.jpg" >
+				</a>
+			</div>
+		</div>
+		<div class="mui-slider-indicator">
+			<div class="mui-indicator mui-active"></div>
+			<div class="mui-indicator"></div>
+			<div class="mui-indicator"></div>
+			<div class="mui-indicator"></div>
+		</div>
+	</div>
+	<!-- 晒一晒 -->
+
+	<div class="show_box">
+		
+		<div class="model_title"><img src="./images/show.png" class="show_icon" alt="">晒一晒</div>
+	<ul class="mui-table-view mui-grid-view mui-grid-9">
+        <li class="mui-table-view-cell mui-media mui-col-xs-3 pdless">
+            <a href="#">
+            	<img src="./images/show_01.jpg" class="showImg">
+            </a>
+        </li>
+        <li class="mui-table-view-cell mui-media mui-col-xs-3 pdless">
+            <a href="#">
+            	<img src="./images/show_01.jpg" class="showImg">
+            </a>
+        </li>
+        <li class="mui-table-view-cell mui-media mui-col-xs-3 pdless">
+            <a href="#">
+            	<img src="./images/show_01.jpg" class="showImg">
+            </a>
+        </li>
+        <li class="mui-table-view-cell mui-media mui-col-xs-3 pdless">
+            <a href="#">
+            	<img src="./images/show_01.jpg" class="showImg">
+            </a>
+        </li>
+    </ul>
+	</div>
+
+    <!-- 精品热销 -->
+	<div class="hot_box">
+		<div class="model_title"><img src="./images/hot.png" class="show_icon" alt="">精品热销</div>
+		
+		<ul class="mui-table-view mui-grid-view">
+	        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+            	<div class="left_line" id="left_line"></div>
+            	<div class="bottom_line" id="bottom_line"></div>
+
+	            <a href="#">
+	                <img class="mui-media-object" src="./images/list_img.jpg">
+                	<div class="depict">川渝古法制作，拉布拉卡精油，香精薰衣草，无法自拔。</div>
+                </a>
+                <div class="price_and_add">
+                	<span class="hot_price">￥100.00</span>
+                	<span class="add_to_cart"><img src="./images/cart_icon.png" alt=""></span>
+                </div>
+
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+            	<div class="left_line" id="left_line"></div>
+            	<div class="bottom_line" id="bottom_line"></div>
+
+	            <a href="#">
+	                <img class="mui-media-object" src="./images/list_img.jpg">
+                	<div class="depict">川渝古法制作，拉布拉卡精油，香精薰衣草，无法自拔。</div>
+                </a>
+                <div class="price_and_add">
+                	<span class="hot_price">￥100.00</span>
+                	<span class="add_to_cart"><img src="./images/cart_icon.png" alt=""></span>
+                </div>
+                
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+            	<div class="left_line" id="left_line"></div>
+            	<div class="bottom_line" id="bottom_line"></div>
+
+	            <a href="#">
+	                <img class="mui-media-object" src="./images/list_img.jpg">
+                	<div class="depict">川渝古法制作，拉布拉卡精油，香精薰衣草，无法自拔。</div>
+                </a>
+                <div class="price_and_add">
+                	<span class="hot_price">￥100.00</span>
+                	<span class="add_to_cart"><img src="./images/cart_icon.png" alt=""></span>
+                </div>
+                
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+            	<div class="left_line" id="left_line"></div>
+            	<div class="bottom_line" id="bottom_line"></div>
+
+	            <a href="#">
+	                <img class="mui-media-object" src="./images/list_img.jpg">
+                	<div class="depict">川渝古法制作，拉布拉卡精油，香精薰衣草，无法自拔。</div>
+                </a>
+                <div class="price_and_add">
+                	<span class="hot_price">￥100.00</span>
+                	<span class="add_to_cart"><img src="./images/cart_icon.png" alt=""></span>
+                </div>
+                
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+            	<div class="left_line" id="left_line"></div>
+            	<div class="bottom_line" id="bottom_line"></div>
+
+	            <a href="#">
+	                <img class="mui-media-object" src="./images/list_img.jpg">
+                	<div class="depict">川渝古法制作，拉布拉卡精油，香精薰衣草，无法自拔。</div>
+                </a>
+                <div class="price_and_add">
+                	<span class="hot_price">￥100.00</span>
+                	<span class="add_to_cart"><img src="./images/cart_icon.png" alt=""></span>
+                </div>
+                
+            </li>
+            
+
+	        
+	    </ul> 
+
+	</div>
+
+	<!-- 分类 -->
+	<div class="classify" id="classify">
+		<div class="mui-content">
+		<div id="slider1" class="mui-slider my_slider">
+			<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-negative" style="background: #fff;margin-top: 10px;">
+				<a class="mui-control-item" href="#item1mobile">
+			{{msg1}}
+		</a>
+				<a class="mui-control-item" href="#item2mobile" >
+			分类2
+		</a>
+				<a class="mui-control-item" href="#item3mobile" >
+			分类3
+		</a>
+		<a class="mui-control-item"  href="#item4mobile" >
+			分类4
+		</a>
+			</div>
+			<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-3"></div>
+			<div class="mui-slider-group" id="classify_list">
+				<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+					<div id="scroll1" class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+
+
+
+<ul class="imageText">
+<li>
+	<a href="">
+		<img src="./images/list_img.jpg" class="imageTextimg" alt="">
+	</a>
+
+		<div class="classify_depict">
+			<a href="">
+				<div class="classify_depict_tit">川渝古法制作，拉布拉卡精油，香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。</div>
+			</a>
+			<div class="price_and_add">
+            	<span class="hot_price price2">￥100.00</span>
+            	<span class="add_to_cart2"><img src="./images/cart_icon.png" alt=""></span>
+            </div>
+		</div>
+</li>
+
+
+</ul>
+
+
+						</div>
+					</div>
+				</div>
+				<div id="item2mobile" class="mui-slider-item mui-control-content">
+					<div id="scroll2" class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+<ul class="imageText">
+<li>
+	<a href="">
+		<img src="./images/list_img.jpg" class="imageTextimg" alt="">
+		<div class="classify_depict">
+			<div class="classify_depict_tit">川渝古法制作，拉布拉卡精油，香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。</div>
+			<div class="price_and_add">
+            	<span class="hot_price price2">￥100.00</span>
+            	<span class="add_to_cart2"><img src="./images/cart_icon.png" alt=""></span>
+            </div>
+		</div>
+	</a>
+</li>
+
+<li>
+	<a href="">
+		<img src="./images/list_img.jpg" class="imageTextimg" alt="">
+		<div class="classify_depict">
+			川渝古法制作，拉布拉卡精油，香精薰衣草，无法自拔。
+			<div class="price_and_add">
+            	<span class="hot_price price2">￥100.00</span>
+            	<span class="add_to_cart2"><img src="./images/cart_icon.png" alt=""></span>
+            </div>
+		</div>
+	</a>
+</li>
+
+<li>
+	<a href="">
+		<img src="./images/list_img.jpg" class="imageTextimg" alt="">
+		<div class="classify_depict">
+			川渝古法制作，拉布拉卡精油，香精薰衣草，无法自拔。
+			<div class="price_and_add">
+            	<span class="hot_price price2">￥100.00</span>
+            	<span class="add_to_cart2"><img src="./images/cart_icon.png" alt=""></span>
+            </div>
+		</div>
+	</a>
+</li>
+
+
+</ul>
+						</div>
+					</div>
+
+				</div>
+				<div id="item3mobile" class="mui-slider-item mui-control-content">
+					<div id="scroll3" class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+<ul class="imageText">
+<li>
+	<a href="">
+		<img src="./images/list_img.jpg" class="imageTextimg" alt="">
+		<div class="classify_depict">
+			<div class="classify_depict_tit">川渝古法制作，拉布拉卡精油，香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。</div>
+			<div class="price_and_add">
+            	<span class="hot_price price2">￥100.00</span>
+            	<span class="add_to_cart2"><img src="./images/cart_icon.png" alt=""></span>
+            </div>
+		</div>
+	</a>
+</li>
+
+<li>
+	<a href="">
+		<img src="./images/list_img.jpg" class="imageTextimg" alt="">
+		<div class="classify_depict">
+			川渝古法制作，拉布拉卡精油，香精薰衣草，无法自拔。
+			<div class="price_and_add">
+            	<span class="hot_price price2">￥100.00</span>
+            	<span class="add_to_cart2"><img src="./images/cart_icon.png" alt=""></span>
+            </div>
+		</div>
+	</a>
+</li>
+
+<li>
+	<a href="">
+		<img src="./images/list_img.jpg" class="imageTextimg" alt="">
+		<div class="classify_depict">
+			川渝古法制作，拉布拉卡精油，香精薰衣草，无法自拔。
+			<div class="price_and_add">
+            	<span class="hot_price price2">￥100.00</span>
+            	<span class="add_to_cart2"><img src="./images/cart_icon.png" alt=""></span>
+            </div>
+		</div>
+	</a>
+</li>
+
+<li>
+	<a href="">
+		<img src="./images/list_img.jpg" class="imageTextimg" alt="">
+		<div class="classify_depict">
+			川渝古法制作，拉布拉卡精油，香精薰衣草，无法自拔。
+			<div class="price_and_add">
+            	<span class="hot_price price2">￥100.00</span>
+            	<span class="add_to_cart2"><img src="./images/cart_icon.png" alt=""></span>
+            </div>
+		</div>
+	</a>
+</li>
+
+<li>
+	<a href="">
+		<img src="./images/list_img.jpg" class="imageTextimg" alt="">
+		<div class="classify_depict">
+			川渝古法制作，拉布拉卡精油，香精薰衣草，无法自拔。
+			<div class="price_and_add">
+            	<span class="hot_price price2">￥100.00</span>
+            	<span class="add_to_cart2"><img src="./images/cart_icon.png" alt=""></span>
+            </div>
+		</div>
+	</a>
+</li>
+
+<li>
+	<a href="">
+		<img src="./images/list_img.jpg" class="imageTextimg" alt="">
+		<div class="classify_depict">
+			川渝古法制作，拉布拉卡精油，香精薰衣草，无法自拔。
+			<div class="price_and_add">
+            	<span class="hot_price price2">￥100.00</span>
+            	<span class="add_to_cart2"><img src="./images/cart_icon.png" alt=""></span>
+            </div>
+		</div>
+	</a>
+</li>
+
+
+</ul>
+						</div>
+					</div>
+
+				</div>
+				<div id="item4mobile" class="mui-slider-item mui-control-content">
+					<div id="scroll4" class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+<ul class="imageText">
+<li>
+	<a href="">
+		<img src="./images/list_img.jpg" class="imageTextimg" alt="">
+		<div class="classify_depict">
+			<div class="classify_depict_tit">川渝古法制作，拉布拉卡精油，香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。</div>
+			<div class="price_and_add">
+            	<span class="hot_price price2">￥100.00</span>
+            	<span class="add_to_cart2"><img src="./images/cart_icon.png" alt=""></span>
+            </div>
+		</div>
+	</a>
+</li>
+<li>
+	<a href="">
+		<img src="./images/list_img.jpg" class="imageTextimg" alt="">
+		<div class="classify_depict">
+			<div class="classify_depict_tit">川渝古法制作，拉布拉卡精油，香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。</div>
+			<div class="price_and_add">
+            	<span class="hot_price price2">￥100.00</span>
+            	<span class="add_to_cart2"><img src="./images/cart_icon.png" alt=""></span>
+            </div>
+		</div>
+	</a>
+</li>
+<li>
+	<a href="">
+		<img src="./images/list_img.jpg" class="imageTextimg" alt="">
+		<div class="classify_depict">
+			川渝古法制作，拉布拉卡精油，香精薰衣草，无法自拔。
+			<div class="price_and_add">
+            	<span class="hot_price price2">￥100.00</span>
+            	<span class="add_to_cart2"><img src="./images/cart_icon.png" alt=""></span>
+            </div>
+		</div>
+	</a>
+</li>
+<li>
+	<a href="">
+		<img src="./images/list_img.jpg" class="imageTextimg" alt="">
+		<div class="classify_depict">
+			川渝古法制作，拉布拉卡精油，香精薰衣草，无法自拔。
+			<div class="price_and_add">
+            	<span class="hot_price price2">￥100.00</span>
+            	<span class="add_to_cart2"><img src="./images/cart_icon.png" alt=""></span>
+            </div>
+		</div>
+	</a>
+</li>
+
+
+</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	</div>
+
+
+	<footer class="footer">
+		<ul>
+			<li class="">
+				<a href="">
+					<img src="../images/home_01.png" alt="">
+					<span class="footer_nav_active">首页</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="../images/car_02.png" alt="">
+					<span class="footer_nav_default">购物车</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="../images/mine_02.png" alt="">
+					<span class="footer_nav_default">我的</span>
+				</a>
+			</li>
+		</ul>
+
+	</footer>
+
+	</div>
+
+
+	
+	
+</body>
+	
+
+<script src="../js/mui.min.js"></script>
+<script src="../js/vue.min.js"></script>
+<script src="../js/vue-resource.min.js"></script>
+<script>
+
+new Vue({
+	el:"#app",
+	data:{
+		msg:"hello world!!!!!!!!!",
+		msg1:"火箭"
+	},
+	methods:{
+		aa:function(){
+			alert(1243443)
+		},
+		loadView:function(){
+			// mui轮播
+			mui.init({
+				swipeBack:false //启用右滑关闭功能
+			});
+			mui("#slider").slider({ interval: 100 })
+			var classify_list = document.getElementById('classify_list')
+			classify_list.style.height = classify_list.children[0].children[0].children[0].offsetHeight+"px"
+			console.log(classify_list.children[0].children[0].children[0].children[0])
+			document.querySelector('.my_slider').addEventListener('slide', function(e) {
+				alert(e.detail.slideNumber)
+				classify_list.style.height = classify_list.children[e.detail.slideNumber].children[0].children[0].offsetHeight+"px"
+				
+			});
+
+			// search.html 跳转
+			var inp = document.querySelector("#search-inp")
+			inp.onfocus = function(){
+				location.href = './pages/search.html'
+			}
+
+
+			// 样式
+			var hotList = document.querySelector(".hot_box").getElementsByTagName('li')
+			for(var i=0;i<hotList.length;i++){
+
+				if(i%2==1){
+					hotList[i].children[0].style.display="none"
+					hotList[i].children[1].style.display="none"
+				}
+			}
+		}
+	},
+	mounted:function(){
+		this.loadView()
+	},
+	updated: function() {
+        
+
+    }
+})
+
+</script>
+</html>

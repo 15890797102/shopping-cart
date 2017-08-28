@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>购物车</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<!-- <meta name="viewport" content="initial-scale=0.8"> -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<!--标准mui.css-->
+	<link rel="stylesheet" href="../css/mui.min.css">
+	<!--App自定义的css-->
+	<link rel="stylesheet" type="text/css" href="../css/app.css"/>
+</head>
+<body class="waiting">
+<div id="app">
+<!-- 标头 -->
+<header class="mui-bar mui-bar-nav">
+	<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<h1 class="mui-title">购物车</h1>
+</header>
+
+<div class="mui-content cart_content">
+	
+
+<div class="cAll">
+	<div class="checkedbox checked_true"></div>
+	商家自营
+</div>
+<ul class="imageText" id="OA_task_1">
+	   	
+
+	<li class=" My_cart mui-table-view-cell">
+		<div class="mui-slider-right mui-disabled">
+			<a class="mui-btn mui-btn-red">删除</a>
+		</div>
+		<div class="mui-slider-handle">
+			<div class="checkedbox checked_true"></div>
+			<a href="">
+				<img src="../images/list_img.jpg" class="imageTextimg" alt="">
+			</a>
+			<div class="classify_depict">
+				<a href="">
+					<div class="classify_depict_tit">川渝古法制作，拉布拉卡精油，香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。</div>
+				</a>
+				<div class="price_and_add">
+	            	<span class="hot_price price2">￥100.00</span>
+	            	<span class="add_to_cart2 fuck_num">
+	            		<!-- <img src="../images/cart_icon.png" alt="" class="atc"> -->
+	            		<span>-</span>
+	            		<input type="text" readonly="readonly" value="1" v-model="msg.num">
+	            		<span>+</span>
+	            	</span>
+	            </div>
+			</div>
+		</div>
+	</li>
+
+	<li class=" My_cart mui-table-view-cell">
+		<div class="mui-slider-right mui-disabled">
+			<a class="mui-btn mui-btn-red">删除</a>
+		</div>
+		<div class="mui-slider-handle">
+			<div class="checkedbox checked_true"></div>
+			<a href="">
+				<img src="../images/list_img.jpg" class="imageTextimg" alt="">
+			</a>
+			<div class="classify_depict">
+				<a href="">
+					<div class="classify_depict_tit">川渝古法制作，拉布拉卡精油，香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。</div>
+				</a>
+				<div class="price_and_add">
+	            	<span class="hot_price price2">￥100.00</span>
+	            	<span class="add_to_cart2 fuck_num">
+	            		<!-- <img src="../images/cart_icon.png" alt="" class="atc"> -->
+	            		<span>-</span>
+	            		<input type="text" readonly="readonly" value="1">
+	            		<span>+</span>
+	            	</span>
+	            </div>
+			</div>
+		</div>
+	</li>
+
+	<li class=" My_cart mui-table-view-cell">
+		<div class="mui-slider-right mui-disabled">
+			<a class="mui-btn mui-btn-red">删除</a>
+		</div>
+		<div class="mui-slider-handle">
+			<div class="checkedbox " v-bind:class="{'checked_true':msg.checked}"></div>
+			<a href="">
+				<img src="../images/list_img.jpg" class="imageTextimg" alt="">
+			</a>
+			<div class="classify_depict">
+				<a href="">
+					<div class="classify_depict_tit">川渝古法制作，拉布拉卡精油，香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。</div>
+				</a>
+				<div class="price_and_add">
+	            	<span class="hot_price price2">￥100.00</span>
+	            	<span class="add_to_cart2 fuck_num">
+	            		<!-- <img src="../images/cart_icon.png" alt="" class="atc"> -->
+	            		<span>-</span>
+	            		<input type="text" readonly="readonly" value="1">
+	            		<span>+</span>
+	            	</span>
+	            </div>
+			</div>
+		</div>
+	</li>
+
+	<li class=" My_cart mui-table-view-cell">
+		<div class="mui-slider-right mui-disabled">
+			<a class="mui-btn mui-btn-red">删除</a>
+		</div>
+		<div class="mui-slider-handle">
+			<div class="checkedbox checked_true"></div>
+			<a href="">
+				<img src="../images/list_img.jpg" class="imageTextimg" alt="">
+			</a>
+			<div class="classify_depict">
+				<a href="">
+					<div class="classify_depict_tit">川渝古法制作，拉布拉卡精油，香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。</div>
+				</a>
+				<div class="price_and_add">
+	            	<span class="hot_price price2">￥100.00</span>
+	            	<span class="add_to_cart2 fuck_num">
+	            		<!-- <img src="../images/cart_icon.png" alt="" class="atc"> -->
+	            		<span>-</span>
+	            		<input type="text" readonly="readonly" value="1">
+	            		<span>+</span>
+	            	</span>
+	            </div>
+			</div>
+		</div>
+	</li>
+
+	<li class=" My_cart mui-table-view-cell">
+		<div class="mui-slider-right mui-disabled">
+			<a class="mui-btn mui-btn-red">删除</a>
+		</div>
+		<div class="mui-slider-handle">
+			<div class="checkedbox checked_true"></div>
+			<a href="">
+				<img src="../images/list_img.jpg" class="imageTextimg" alt="">
+			</a>
+			<div class="classify_depict">
+				<a href="">
+					<div class="classify_depict_tit">川渝古法制作，拉布拉卡精油，香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。香精薰衣草，无法自拔。</div>
+				</a>
+				<div class="price_and_add">
+	            	<span class="hot_price price2">￥100.00</span>
+	            	<span class="add_to_cart2 fuck_num">
+	            		<!-- <img src="../images/cart_icon.png" alt="" class="atc"> -->
+	            		<span>-</span>
+	            		<input type="text" readonly="readonly" value="1">
+	            		<span>+</span>
+	            	</span>
+	            </div>
+			</div>
+		</div>
+	</li>
+</ul>
+
+
+
+</div>
+
+
+<div class="enddddd_bar">
+	
+	<div class="checkedbox checked_true fl endforenen_cAll"></div>
+	<span class="cAll_txt">全选</span>
+	
+	<div class="cart_totalMoney fl">合计：￥ 4000.00</div>
+	
+	<div class="gofor_enen fl" v-on:click="doit">去结算</div>
+
+</div>
+
+
+</div>	
+<!-- common.js适配 -->
+<script src="../js/common.js"></script>
+<script src="../js/mui.min.js"></script>
+<script src="../js/vue.min.js"></script>
+<script src="../js/vue-resource.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script>
+// mui.alert(1)
+new Vue({
+	el:"#app",
+	data:{
+		msg:{
+			num: 2,
+			checked:false
+		}
+	},
+	methods:{
+		loadview:function(){
+			$("#OA_task_1").on('tap', '.mui-btn', function(event) {
+				var elem = this;
+				var li = elem.parentNode.parentNode;
+				mui.confirm('确认删除该条记录？', ' ', btnArray, function(e) {
+					if (e.index == 1) {
+						li.parentNode.removeChild(li);
+					} else {
+						setTimeout(function() {
+							$.swipeoutClose(li);
+						}, 0);
+					}
+				});
+			});
+			var btnArray = ['取消', '确认'];
+
+		},
+		doit:function(){
+			alert(1)
+		}
+	},
+	mounted:function(){
+		this.loadview()
+	}
+})
+</script>
+</body>
+</html>
